@@ -1,0 +1,16 @@
+<div>
+    <button (click) ="refresh()" class = "btn btn-primary">Refresh</button>
+    <table class="table" *ngIf = "employees">
+        <thead>
+            <tr> 
+                <th>Id</th><th>Name</th><th>Dob</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let e of employees">
+                <td>{{e.id}}</td><td>{{e.name}}</td><td>{{e.dob}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
